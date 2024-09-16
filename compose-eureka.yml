@@ -1,0 +1,16 @@
+services:
+  eureka-server:
+    build: .
+    image: taohans/gestaocerta:eureka-server
+    container_name: eureka-server
+    environment:
+      - SERVER_PORT=8761
+      - EUREKA_INSTANCE_HOSTNAME=gc-eureka
+    ports:
+      - "8761:8761"
+    networks:
+      - eureka-network
+
+networks:
+  eureka-network:
+    driver: bridge
