@@ -1,4 +1,4 @@
-package com.taohansen.eurekaserver;
+package com.gestaocerta.eurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

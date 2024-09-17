@@ -5,12 +5,11 @@ services:
     container_name: eureka-server
     environment:
       - SERVER_PORT=8761
-      - EUREKA_INSTANCE_HOSTNAME=gc-eureka
     ports:
       - "8761:8761"
     networks:
-      - eureka-network
+      - gestaocerta-private
 
 networks:
-  eureka-network:
-    driver: bridge
+  gestaocerta-private:
+    external: true
